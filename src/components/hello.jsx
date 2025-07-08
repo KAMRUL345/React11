@@ -1,6 +1,6 @@
 // Hello.js
 function Hello(props) {
-  return <h1>Hello, {props.name}!</h1>;
+  return <p>Hello, {props.name}!</p>;
 }
 
 export default Hello;

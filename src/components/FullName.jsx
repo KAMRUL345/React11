@@ -1,6 +1,6 @@
 // FullName.js
 function FullName(props) {
-  return <h1>Hello, I am {props.name1} {props.name2}!</h1>;
+  return <p>Hello, I am {props.name1} {props.name2}!</p>;
 }
 
 export default FullName;

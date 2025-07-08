@@ -2,12 +2,19 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import InputName from './components/inputName.jsx'
+import Counter from './components/counter.jsx'
+import InputName1 from './components/input-useState.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <InputName onChange={(e) => console.log(e.target.value)} />
+      <Counter />
+      <InputName1 />
+      {/*}
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -28,6 +35,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      */}
     </>
   )
 }

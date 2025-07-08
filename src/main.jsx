@@ -4,6 +4,8 @@ import './index.css'
 import App from './App.jsx'
 import Hello from './components/hello.jsx'
 import FullName from './components/FullName.jsx'
+import Hello2 from './components/hello2.jsx'
+import Btn from './button/button01.jsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -15,6 +17,10 @@ createRoot(document.getElementById('root')).render(
     <Hello name="Agrani Bank PLC" />
     <FullName name1="Kamrul" name2="Hasan" />
     <FullName name1="Masrura" name2="Borsha" />
+    <Hello2 name="Kamrul" age="30" district="Dhaka" />
+    <Hello2 name="Badol" age="50" district="ChapaiNawabganj" />
+    <Btn />
+    <Btn />
 
   </StrictMode>,
 )
