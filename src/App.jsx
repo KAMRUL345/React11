@@ -5,15 +5,21 @@ import './App.css'
 import InputName from './components/inputName.jsx'
 import Counter from './components/counter.jsx'
 import InputName1 from './components/input-useState.jsx'
+import About from './pages/about/About.jsx'
+import router from './routes/routes.jsx'
+import { RouterProvider } from 'react-router-dom'
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <RouterProvider router={router} />
       <InputName onChange={(e) => console.log(e.target.value)} />
       <Counter />
       <InputName1 />
+      <About />
       {/*}
       <div>
         <a href="https://vite.dev" target="_blank">

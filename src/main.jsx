@@ -6,11 +6,16 @@ import Hello from './components/hello.jsx'
 import FullName from './components/FullName.jsx'
 import Hello2 from './components/hello2.jsx'
 import Btn from './button/button01.jsx'
+import { Router, RouterProvider } from 'react-router-dom'
+import router from './routes/routes.jsx'
+
+
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
+    <RouterProvider router={router} />
     <Hello name="World" />
     <Hello name="Kamrul" />
     <Hello name="Bangladesh" />
